@@ -1,18 +1,17 @@
 import React from "react";
 import { Resource } from "./Resource";
 
-export const Starters = ({resources}) => {
-    console.log(resources)
+export const Resources = ({resourceType, resources}) => {
     return (
         <div>
-            <h2>Starters</h2>
+            <h2>{resourceType}</h2>
             <ul>
                 {resources.map((resource, index) => {
                     return <Resource 
                         name={resource.name}
                         description={resource.description}
                         url={resource.url}
-                        key={`starter-${index}`}
+                        key={resourceType+index}
                         />
                 })}
             </ul>
