@@ -1,17 +1,18 @@
 import React from "react";
 import { Resource } from "./Resource";
 
-export const Resources = ({resourceType, resources}) => {
+export const Resources = ({resourceTitle, resources}) => {
+
     return (
         <div>
-            <h2>{resourceType}</h2>
+            <h2>{resourceTitle}</h2>
             <ul>
                 {resources.map((resource, index) => {
                     return <Resource 
-                        name={resource.name}
+                        name={resource.resourceName}
                         description={resource.description}
                         url={resource.url}
-                        key={resourceType+index}
+                        key={resourceTitle+index}
                         />
                 })}
             </ul>
