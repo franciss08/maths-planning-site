@@ -1,4 +1,4 @@
-export const resources = {
+export const data = {
     starters: {
         title: 'Starters',
         path: '/starters',
@@ -55,7 +55,7 @@ export const resources = {
         path: '/useful-tools',
         resources: [
             {
-                resourceName: "Maths Universe whiteboard",
+                resourceName: "Maths Universe Whiteboard",
                 description: "Ability to project from your phone to the board",
                 url: "https://www.mathsuniverse.com/whiteboard/"
             }

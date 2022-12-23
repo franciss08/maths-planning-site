@@ -2,14 +2,14 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Resources } from './components/Resources';
-import { resources } from './data/resources';
+import { data } from './data/data';
 
 function App() {
   // takes the data imported as an object and creates an array
   // in the array, each element is an object containing all the 
   // resources and router-dom information needed to
   // generate the neccesary pages
-  const resourcesArray = Object.values(resources);
+  const resourcesArray = Object.values(data);
 
   // this bit extracts the information needed for the navbar
   // as an array of objects
