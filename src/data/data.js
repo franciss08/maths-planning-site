@@ -5,12 +5,12 @@ export const data = {
         resources: [
             {
                 resourceName: "4 Question Starter",
-                description: "Maths white board 4 question starter generator",
+                description: "4 question starter generator on user selected topics",
                 url: "https://mathswhiteboard.com/MWB/LWB"
             },
             {
                 resourceName: "Corbett Maths 5-a-day",
-                description: "information here",
+                description: "Daily 5 question starter on random topics at 5 different levels",
                 url: "https://corbettmaths.com/contents/"
             }
         ]

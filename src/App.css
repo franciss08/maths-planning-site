@@ -2,13 +2,67 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body {
+  background-color:rgb(247, 251, 252);
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  background-color: rgb(20, 66, 114);
+  color: rgb(214, 230, 242);
+  padding: 0.1em;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid rgb(214, 230, 242);
+  background-color:rgb(149, 180, 215);
+  border-radius: 0.5em;
+}
+
+
+
+.nav-bar {
+
+}
+
+.nav-bar ul {
+  width: 50%;
+  margin: auto;
+}
+
+.nav-bar li {
+  color: rgb(56, 102, 151);
+  padding: 0.25em;
+  margin: 0.1em;
+}
+
+.nav-bar a:hover {
+  font-weight: bolder;
+}
+
+.resource li {
+  border: 2px black solid;
+  padding: 1em;
+  margin: 1em auto;
+  width: 75%;
+  color: rgb(20, 66, 114);
+  background-color:rgb(214, 230, 242);
+  box-shadow: 0.1em 0.1em black;
+}
+
+.resource li strong {
+  font-size: 1.2em;
+}
+
+.resource li:hover {
+  box-shadow: 0.05em 0.05em grey;
 }
