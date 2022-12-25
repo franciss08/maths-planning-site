@@ -1,11 +1,12 @@
 :root {
-  --main-bg-color: rgb(247, 251, 252);
-  --heading-bg-color:rgb(20, 66, 114); 
-  --heading-txt-color: rgb(214, 230, 242);
-  --nav-bg-color:rgb(149, 180, 215);
-  --nav-txt-color:rgb(56, 102, 151);
-  --resource-bg-color:rgb(214, 230, 242);
-  --resource-txt-color:rgb(20, 66, 114);
+  --main-bg-color: rgb(233, 232, 232);
+  --heading-bg-color:#eb7558; 
+  --heading-txt-color: #f8fffa;
+  --nav-bg-color:#52796F;
+  --nav-txt-color:#EFF1F3;
+  --resource-bg-color:#eff3f0;
+  --resource-txt-color:#103939;
+  --resource-bor-color: #5ead92;
 }
 
 .App {
@@ -38,12 +39,6 @@ li {
   border-radius: 0.5em;
 }
 
-
-
-.nav-bar {
-
-}
-
 .nav-bar ul {
   width: 50%;
   margin: auto;
@@ -51,7 +46,7 @@ li {
 
 .nav-bar li {
   color: var(--nav-txt-color);
-  background-color:var(var(--nav-bg-color));
+  background-color:var(--nav-bg-color);
   padding: 0.25em;
   margin: 0.1em;
 }
@@ -61,13 +56,13 @@ li {
 }
 
 .resource li {
-  border: 2px black solid;
+  border: 2px solid var(--resource-bor-color);
   padding: 1em;
   margin: 1em auto;
   width: 75%;
   color: var(--resource-txt-color);
   background-color:var(--resource-bg-color);
-  box-shadow: 0.1em 0.1em black;
+  box-shadow: 0.1em 0.1em var(--resource-bor-color);
 }
 
 .resource li strong {
