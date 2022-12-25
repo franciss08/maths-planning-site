@@ -1,9 +1,19 @@
+:root {
+  --main-bg-color: rgb(247, 251, 252);
+  --heading-bg-color:rgb(20, 66, 114); 
+  --heading-txt-color: rgb(214, 230, 242);
+  --nav-bg-color:rgb(149, 180, 215);
+  --nav-txt-color:rgb(56, 102, 151);
+  --resource-bg-color:rgb(214, 230, 242);
+  --resource-txt-color:rgb(20, 66, 114);
+}
+
 .App {
   text-align: center;
 }
 
 body {
-  background-color:rgb(247, 251, 252);
+  background-color:var(--main-bg-color);
 }
 
 a {
@@ -11,8 +21,8 @@ a {
 }
 
 h1, h2 {
-  background-color: rgb(20, 66, 114);
-  color: rgb(214, 230, 242);
+  background-color: var(--heading-bg-color);
+  color: var(--heading-txt-color);
   padding: 0.1em;
 }
 
@@ -23,8 +33,8 @@ ul {
 li {
   list-style-type: none;
   margin: 0;
-  border: 1px solid rgb(214, 230, 242);
-  background-color:rgb(149, 180, 215);
+  border: 1px solid var(--main-bg-color);
+  
   border-radius: 0.5em;
 }
 
@@ -40,7 +50,8 @@ li {
 }
 
 .nav-bar li {
-  color: rgb(56, 102, 151);
+  color: var(--nav-txt-color);
+  background-color:var(var(--nav-bg-color));
   padding: 0.25em;
   margin: 0.1em;
 }
@@ -54,8 +65,8 @@ li {
   padding: 1em;
   margin: 1em auto;
   width: 75%;
-  color: rgb(20, 66, 114);
-  background-color:rgb(214, 230, 242);
+  color: var(--resource-txt-color);
+  background-color:var(--resource-bg-color);
   box-shadow: 0.1em 0.1em black;
 }
 
