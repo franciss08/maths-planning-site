@@ -3,6 +3,7 @@
   --heading-bg-color:#eb7558; 
   --heading-txt-color: #f8fffa;
   --nav-bg-color:#52796F;
+  --nav-sel-color: #5ead92;
   --nav-txt-color:#EFF1F3;
   --resource-bg-color:#eff3f0;
   --resource-txt-color:#103939;
@@ -53,6 +54,10 @@ li {
 
 .nav-bar a:hover {
   font-weight: bolder;
+}
+
+.selected li {
+  background-color: var(--nav-sel-color);
 }
 
 .resource li {

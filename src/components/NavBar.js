@@ -1,14 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export const NavBar = ({pages}) => {
 
     return (
         <div className="nav-bar">
             <ul>
-                <Link to="/"><li>Home</li></Link>
+                <NavLink 
+                    to="/"
+                    className={({isActive})=> 
+                        isActive? "selected" : undefined
+                        }
+                    ><li>Home</li></NavLink>
                 {pages.map((page, index) => {
-                    return <Link to={page.path} key={`page${index}`}><li>{page.title}</li></Link>
+                    return <NavLink 
+                        to={page.path}
+                        key={`page${index}`} 
+                        className={({isActive}) => isActive? "selected" : undefined}
+                    ><li>{page.title}</li></NavLink>
                 })}
             </ul>
         </div>

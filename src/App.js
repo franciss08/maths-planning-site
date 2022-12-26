@@ -1,8 +1,10 @@
 import './App.css';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { NavBar } from './components/NavBar';
 import { Resources } from './components/Resources';
 import { data } from './data/data';
+import { HomePage } from './components/HomePage';
 
 function App() {
   // takes the data imported as an object and creates an array
@@ -22,7 +24,7 @@ function App() {
         <h1>Maths Planning Site</h1>
         <NavBar pages={pagesArray}/>
         <Routes>
-          <Route path="/" />
+          <Route path="*" element={<HomePage />} />
           {resourcesArray.map((category) => {
               return (<Route 
                 path={category.path}
