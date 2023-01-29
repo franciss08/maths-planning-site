@@ -40,6 +40,11 @@ li {
   border-radius: 0.5em;
 }
 
+/*.nav-bar div {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}*/
+
 .nav-bar ul {
   width: 50%;
   margin: auto;
